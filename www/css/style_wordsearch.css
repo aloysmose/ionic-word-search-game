@@ -1,0 +1,178 @@
+/**
+* Wordfind.js 0.0.1
+* (c) 2012 Bill, BunKat LLC.
+* Wordfind is freely distributable under the MIT license.
+* For all details and documentation:
+*     http://github.com/bunkat/wordfind
+*/
+
+p {
+    font: 22pt arial;
+    margin: 20px 20px 0px 20px;
+}
+
+/**
+* Styles for the puzzle
+*/
+.hidden{
+    display: none;
+}
+#puzzle {
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+#puzzle > div {
+    margin: 0 auto;
+}
+
+/* style for each square in the puzzle */
+#puzzle .puzzleSquare {
+    padding: 0;
+    /*background-color: rgba(255,255,255,0.7);*/
+    border: 0;
+    font-family: arial;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/* indicates when a square has been selected */
+#puzzle .selected {
+  background-color: #FF8C00;
+}
+
+/* indicates that the square is part of a word that has been found */ 
+#puzzle .found {
+  background-color: blue;
+  color: white;
+}
+
+#puzzle .solved {
+  background-color: purple;
+  color: white;
+}
+
+/* indicates that all words have been found */
+#puzzle .complete {
+  background-color: rgba(0, 255, 0, .2);
+}
+
+/**
+* Styles for the word list
+*/
+#words {
+    height: 100%;
+    font-size: 20pt;
+    line-height: 20pt;
+    padding: 3pt;
+}
+
+#words ul {
+    list-style-type: none;
+}
+
+#words li {
+    padding: 0 .1em;
+    font: 24px arial;
+    float: left;
+    display: inline-table;
+}
+
+/* indicates that the word has been found */
+#words .wordFound {
+    display: none;
+    text-decoration: line-through;
+    color: gray;
+}
+
+/**
+* Styles for the button
+*/
+#solve {
+    margin: 0 30px;
+}
+.panels{
+    width: 100%;
+}
+#scoreboard1{
+    /*background: #e1bb6d;*/
+}
+#ad-network{
+    background: black;
+}
+.word{
+    padding: 3pt;
+}
+.game-content{
+    
+}
+.score{
+    width: 33%;
+    float: left;
+}
+.count{
+    float: right;
+    text-align: right;
+}
+.fixed-outside{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+    /*background: #A22231;*/
+    text-align:center;
+    overflow-y: scroll;
+}
+.after-game{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.after-game .button{
+    width: 49%;
+    color: #FFF;
+    font-weight: bold;
+    min-height: 44px;
+    background-color: #006735;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 5px #003119;
+    margin: 0px auto;
+}
+.after-game .button:nth-child(even){
+    float: right;
+}
+
+#menu-outer {
+    height: 84px;
+    background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+    display: table;   /* Allow the centering to work */
+    margin: 0 auto;
+}
+
+ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+    }
+    ul#horizontal-list li {
+        display: inline;
+    }
+
+
+.chat-item.ng-enter-stagger {
+  -webkit-animation-delay:200ms;
+  animation-delay:200ms;
+
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}

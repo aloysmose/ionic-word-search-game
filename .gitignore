@@ -1,0 +1,42 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+platforms/
+plugins/
+docs/
+www/lib/
+
+.DS_Store
+node_modules
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+log.txt
+example/cordova/iOS/www/js/framework
+
+www/.DS_Store
+
+example/cordova/iOS/www/js/framework
+.sass-cache/
+framework.sublime-project
+
+framework.sublime-workspace
+UserInterfaceState.xcuserstate
+
+*.sublime-project
+
+*.sublime-workspace
+
+bower_components/
+components/
+tmp
+temp
+dist
+
+.idea
+
+.versions
+
+# Coverage directory used by tools like istanbul
+coverage/
